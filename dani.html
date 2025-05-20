@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <title>Mensagem para Dani</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      text-align: center;
+      margin-top: 100px;
+      background-color: #ffe6f0;
+      color: #333;
+    }
+
+    h1 {
+      font-size: 32px;
+      color: #cc0066;
+    }
+
+    button {
+      padding: 12px 24px;
+      font-size: 18px;
+      background-color: #ff66a3;
+      color: white;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      margin-top: 20px;
+    }
+
+    button:hover {
+      background-color: #cc0066;
+    }
+
+    #mensagem {
+      margin-top: 30px;
+      font-size: 24px;
+      color: #cc0066;
+      display: none;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Olá, Dani 💖</h1>
+  <p>Clica no botão aqui embaixo 👇</p>
+
+  <button onclick="mostrarAmor()">Clique aqui</button>
+
+  <p id="mensagem">Te amo muito, minha pitica! 💕</p>
+
+  <script>
+    function mostrarAmor() {
+      document.getElementById('mensagem').style.display = 'block';
+    }
+  </script>
+
+</body>
+</html>
